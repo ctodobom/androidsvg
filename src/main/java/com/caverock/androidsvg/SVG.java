@@ -37,22 +37,22 @@ import java.util.Set;
 
 /**
  * AndroidSVG is a library for reading, parsing and rendering SVG documents on Android devices.
- * <p/>
+ * <br/>
  * All interaction with AndroidSVG is via this class.
- * <p/>
+ * <br/>
  * Typically, you will call one of the SVG loading and parsing classes then call the renderer,
  * passing it a canvas to draw upon.
- * <p/>
+ * <br/>
  * <h4>Usage summary</h4>
- * <p/>
+ * <br/>
  * <ul>
  * <li>Use one of the static {@code getFromX()} methods to read and parse the SVG file.  They will
  * return an instance of this class.
  * <li>Call one of the {@code renderToX()} methods to render the document.
  * </ul>
- * <p/>
+ * <br/>
  * <h4>Usage example</h4>
- * <p/>
+ * <br/>
  * <pre>
  * {@code
  * SVG  svg = SVG.getFromAsset(getContext().getAssets(), svgPath);
@@ -65,7 +65,7 @@ import java.util.Set;
  * svg.renderToCanvas(bmcanvas);
  * }
  * </pre>
- * <p/>
+ * <br/>
  * For more detailed information on how to use this library, see the documentation at {@code http://code.google
  * .com/p/androidsvg/}
  */
@@ -208,7 +208,7 @@ public class SVG {
     /**
      * Set the DPI (dots-per-inch) value to use when rendering.  The DPI setting is used in the
      * conversion of "physical" units - such an "pt" or "cm" - to pixel values.  The default DPI is 96.
-     * <p/>
+     * <br/>
      * You should not normally need to alter the DPI from the default of 96 as recommended by the SVG
      * and CSS specifications.
      *
@@ -235,7 +235,7 @@ public class SVG {
 
     /**
      * Renders this SVG document to a Picture object.
-     * <p/>
+     * <br/>
      * An attempt will be made to determine a suitable initial viewport from the contents of the SVG file.
      * If an appropriate viewport can't be determined, a default viewport of 512x512 will be used.
      *
@@ -289,7 +289,7 @@ public class SVG {
 
     /**
      * Renders this SVG document to a Picture object using the specified view defined in the document.
-     * <p/>
+     * <br/>
      * A View is an special element in a SVG document that describes a rectangular area in the document.
      * Calling this method with a {@code viewId} will result in the specified view being positioned and scaled
      * to the viewport.  In other words, use {@link #renderToPicture()} to render the whole document, or use this
@@ -367,12 +367,12 @@ public class SVG {
 
     /**
      * Renders this SVG document to a Canvas using the specified view defined in the document.
-     * <p/>
+     * <br/>
      * A View is an special element in a SVG documents that describes a rectangular area in the document.
      * Calling this method with a {@code viewId} will result in the specified view being positioned and scaled
      * to the viewport.  In other words, use {@link #renderToPicture()} to render the whole document, or use this
      * method instead to render just a part of it.
-     * <p/>
+     * <br/>
      * If the {@code <view>} could not be found, nothing will be drawn.
      *
      * @param viewId the id of a view element in the document that defines which section of the document is to be
@@ -386,12 +386,12 @@ public class SVG {
 
     /**
      * Renders this SVG document to a Canvas using the specified view defined in the document.
-     * <p/>
+     * <br/>
      * A View is an special element in a SVG documents that describes a rectangular area in the document.
      * Calling this method with a {@code viewId} will result in the specified view being positioned and scaled
      * to the viewport.  In other words, use {@link #renderToPicture()} to render the whole document, or use this
      * method instead to render just a part of it.
-     * <p/>
+     * <br/>
      * If the {@code <view>} could not be found, nothing will be drawn.
      *
      * @param viewId   the id of a view element in the document that defines which section of the document is to be
@@ -485,7 +485,7 @@ public class SVG {
 
     /**
      * Returns a list of ids for all {@code <view>} elements in this SVG document.
-     * <p/>
+     * <br/>
      * The returned view ids could be used when calling and of the {@code renderViewToX()} methods.
      *
      * @return the list of id strings.
@@ -511,7 +511,7 @@ public class SVG {
 
     /**
      * Returns the width of the document as specified in the SVG file.
-     * <p/>
+     * <br/>
      * If the width in the document is specified in pixels, that value will be returned.
      * If the value is listed with a physical unit such as "cm", then the current
      * {@code RenderDPI} value will be used to convert that value to pixels. If the width
@@ -566,7 +566,7 @@ public class SVG {
 
     /**
      * Returns the height of the document as specified in the SVG file.
-     * <p/>
+     * <br/>
      * If the height in the document is specified in pixels, that value will be returned.
      * If the value is listed with a physical unit such as "cm", then the current
      * {@code RenderDPI} value will be used to convert that value to pixels. If the height
@@ -622,12 +622,12 @@ public class SVG {
     /**
      * Change the document view box by altering the "viewBox" attribute
      * of the root {@code <svg>} element.
-     * <p/>
+     * <br/>
      * The viewBox generally describes the bounding box dimensions of the
      * document contents.  A valid viewBox is necessary if you want the
      * document scaled to fit the canvas or viewport the document is to be
      * rendered into.
-     * <p/>
+     * <br/>
      * By setting a viewBox that describes only a portion of the document,
      * you can reproduce the effect of image sprites.
      *
@@ -699,10 +699,10 @@ public class SVG {
 
     /**
      * Returns the aspect ratio of the document as a width/height fraction.
-     * <p/>
+     * <br/>
      * If the width or height of the document are listed with a physical unit such as "cm",
      * then the current {@code renderDPI} setting will be used to convert that value to pixels.
-     * <p/>
+     * <br/>
      * If the width or height cannot be determined, -1 will be returned.
      *
      * @return the aspect ratio as a width/height fraction, or -1 if the ratio cannot be determined.
