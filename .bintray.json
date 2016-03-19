@@ -63,15 +63,15 @@
       },
       "includePattern": "/home/travis/build/konikvranik/androidsvg/build/outputs/aar/androidsvg-release.aar",
       "excludePattern": ".*/do-not-deploy/.*",
-      "uploadPattern": "com/caverock/4.0.0/androidsvg-4.0.0.aar"
+      "uploadPattern": "com/caverock/androidsvg/4.0.0/androidsvg-4.0.0.aar"
     },
     {
       "matrixParams": {
         "override": 1
       },
-      "includePattern": "/home/travis/build/konikvranik/androidsvg/build/libs/androidsvg-([0-9.]*)-(javadoc.jar|sources.jar)",
+      "includePattern": "/home/travis/build/konikvranik/androidsvg/build/libs/(androidsvg-([0-9.]*)-(javadoc|sources).jar)",
       "excludePattern": ".*/do-not-deploy/.*",
-      "uploadPattern": "com/caverock/$1/androidsvg-$1-$2"
+      "uploadPattern": "com/caverock/androidsvg/$2/$1"
     },
     {
       "matrixParams": {
@@ -79,7 +79,7 @@
       },
       "includePattern": "/home/travis/build/konikvranik/androidsvg/build/poms/pom-default.xml",
       "excludePattern": ".*/do-not-deploy/.*",
-      "uploadPattern": "com/caverock/4.0.0/androidsvg-4.0.0.pom"
+      "uploadPattern": "com/caverock/androidsvg/4.0.0/androidsvg-4.0.0.pom"
     }
   ],
   "publish": true
