@@ -34,7 +34,7 @@
      In case the version already exists on Bintray, only the name fields is mandatory. */
 
   "version": {
-    "name": "4.0.0",
+    "name": "1.3.0",
     "desc": "First release.",
     "released": "2016-03-15",
     "vcs_tag": "v0001",
@@ -63,7 +63,7 @@
       },
       "includePattern": "/home/travis/build/konikvranik/androidsvg/build/outputs/aar/androidsvg-release.aar",
       "excludePattern": ".*/do-not-deploy/.*",
-      "uploadPattern": "com/caverock/androidsvg/4.0.0/androidsvg-4.0.0.aar"
+      "uploadPattern": "com/caverock/androidsvg/1.3.0/androidsvg-1.3.0.aar"
     },
     {
       "matrixParams": {
@@ -79,7 +79,7 @@
       },
       "includePattern": "/home/travis/build/konikvranik/androidsvg/build/poms/pom-default.xml",
       "excludePattern": ".*/do-not-deploy/.*",
-      "uploadPattern": "com/caverock/androidsvg/4.0.0/androidsvg-4.0.0.pom"
+      "uploadPattern": "com/caverock/androidsvg/1.3.0/androidsvg-1.3.0.pom"
     }
   ],
   "publish": true
